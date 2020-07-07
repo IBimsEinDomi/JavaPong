@@ -1,5 +1,5 @@
-=====================
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/IBimsEinMystery/CherryBot/master/LICENSE)
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/IBimsEinMystery/JavaPong/master/LICENSE)
 
 ### Generell ###
 
