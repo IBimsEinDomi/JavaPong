@@ -1,5 +1,8 @@
 package de.dbuettner.pong;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.net.URL;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -7,6 +10,9 @@ public class BallKollision {
 Timer kollision;
 	public BallKollision() {
 		kollision = new Timer();
+		URL url = Gui.class.getResource("/point.wav");
+		AudioClip point = Applet.newAudioClip(url);
+		
 		kollision.scheduleAtFixedRate(new TimerTask(){
 
 			@Override
@@ -27,6 +33,7 @@ Timer kollision;
 					
 					Variables.balldirx = -1;
 					Variables.playerAPoints += 1;
+					point.play();
 					
 				}
 				
@@ -37,6 +44,8 @@ Timer kollision;
 					
 					Variables.balldirx = 1;
 					Variables.playerBPoints += 1;
+					point.play();
+					
 					
 				}
 				
